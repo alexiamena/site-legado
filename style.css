@@ -1,0 +1,993 @@
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fbf7ef;
+    color: #4b342a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(251, 247, 239, 0.96);
+
+    border-bottom: 1px solid #ded1bd;
+
+    backdrop-filter: blur(12px);
+}
+
+.nav {
+    min-height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 2.2rem;
+
+    letter-spacing: 2px;
+
+    color: #55382b;
+}
+
+.logo small {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.48rem;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+    color: #a47b50;
+
+    margin-top: -7px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    font-size: 0.85rem;
+
+    color: #634a3c;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a47748;
+}
+
+
+/* =================================
+   BOTÕES
+================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    border-radius: 50px;
+
+    background: #765036;
+
+    color: white;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #573b29;
+
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+
+    color: #765036;
+
+    border: 1px solid #765036;
+}
+
+.btn-outline:hover {
+    background: #765036;
+
+    color: white;
+}
+
+.btn-whatsapp {
+    background: #765036;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+    min-height: 720px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #eadbc4 0%,
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            #e7d2b6 0%,
+            transparent 30%
+        ),
+
+        #fbf7ef;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-logo {
+    width: 115px;
+    height: 115px;
+
+    margin: 0 auto 25px;
+
+    border: 2px solid #b59668;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero-logo::before {
+    content: "❦";
+
+    position: absolute;
+
+    top: 9px;
+
+    font-size: 1.4rem;
+
+    color: #a47748;
+}
+
+.hero-logo span {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 1.6rem;
+
+    letter-spacing: 2px;
+
+    margin-top: 20px;
+
+    color: #53382b;
+}
+
+.subtitle {
+    color: #a47748;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    color: #493126;
+
+    margin: 20px 0 25px;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #a47748;
+}
+
+.hero p {
+    max-width: 650px;
+
+    margin: auto auto 35px;
+
+    color: #765e50;
+
+    font-size: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =================================
+   SECCIONES
+================================= */
+
+.section {
+    padding: 100px 7%;
+}
+
+.section-title {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+}
+
+.section-label {
+    color: #a47748;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+.section-title h2,
+.why h2,
+.contact h2 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    color: #4b3025;
+
+    margin: 15px 0;
+}
+
+.section-title p {
+    color: #765e50;
+}
+
+
+/* =================================
+   PRODUCTOS
+================================= */
+
+.products {
+    background: #fffdf9;
+}
+
+.products-grid {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    background: #fbf7ef;
+
+    border: 1px solid #dfd0ba;
+
+    border-radius: 20px;
+
+    padding: 35px 28px;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(70, 45, 30, 0.10);
+}
+
+.product-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e9dbc5;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 22px;
+}
+
+.product-card h3 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 1.7rem;
+
+    font-weight: 400;
+
+    color: #54372b;
+
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #765e50;
+
+    font-size: 0.88rem;
+
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-family: "DM Serif Display", serif;
+
+    color: #9b7040;
+
+    font-size: 1.2rem;
+}
+
+.product-price span {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.7rem;
+
+    color: #806a5b;
+}
+
+
+/* =================================
+   TABELA DE PREÇOS
+================================= */
+
+.prices {
+    background: #eee2cf;
+}
+
+.price-table-container {
+    width: 90%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    background: #fffdf9;
+
+    border: 1px solid #d7c5aa;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(70, 45, 30, 0.07);
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+thead {
+    background: #69482f;
+
+    color: white;
+}
+
+th {
+    padding: 18px;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 1.05rem;
+
+    font-weight: 400;
+}
+
+td {
+    padding: 16px 20px;
+
+    border-bottom: 1px solid #e6dccd;
+
+    color: #604a3e;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+}
+
+td:first-child {
+    text-align: left;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 1.1rem;
+
+    color: #54372b;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #faf5ec;
+}
+
+.price {
+    color: #9a6c3b;
+
+    font-weight: 600;
+}
+
+.price-note {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #735d4e;
+
+    font-size: 0.8rem;
+}
+
+
+/* =================================
+   POR QUÉ LEGADO
+================================= */
+
+.why {
+    background: #fbf7ef;
+}
+
+.why-content {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.why h2 span {
+    color: #a47748;
+}
+
+.why-text p {
+    color: #765e50;
+
+    margin-bottom: 18px;
+}
+
+.reasons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.reason {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background: #fffdf9;
+
+    border: 1px solid #e1d4c1;
+
+    border-radius: 18px;
+}
+
+.reason-number {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 1.5rem;
+
+    color: #a47748;
+}
+
+.reason h3 {
+    color: #53372b;
+
+    font-size: 1rem;
+
+    margin-bottom: 5px;
+}
+
+.reason p {
+    color: #765e50;
+
+    font-size: 0.83rem;
+}
+
+
+/* =================================
+   INFORMACIÓN
+================================= */
+
+.info-section {
+    background: #fffdf9;
+}
+
+.info-header {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: auto auto 60px;
+}
+
+.info-header h2 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    font-weight: 400;
+
+    color: #4b3025;
+
+    margin: 15px 0;
+}
+
+.info-header h2 span {
+    color: #a47748;
+}
+
+.info-header p {
+    color: #765e50;
+}
+
+.info-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.info-card {
+    padding: 30px;
+
+    border: 1px solid #dfd0ba;
+
+    border-radius: 20px;
+
+    background: #fbf7ef;
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+.info-icon {
+    min-width: 55px;
+
+    height: 55px;
+
+    border: 1px solid #b99a6b;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.3rem;
+
+    background: #eee2cf;
+}
+
+.info-card h3 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 1.25rem;
+
+    font-weight: 400;
+
+    color: #55382b;
+
+    margin-bottom: 6px;
+}
+
+.info-card p {
+    color: #765e50;
+
+    font-size: 0.82rem;
+}
+
+
+/* =================================
+   FRASE
+================================= */
+
+.quote {
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background: #69482f;
+
+    color: white;
+}
+
+.quote-content {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.quote small {
+    letter-spacing: 5px;
+}
+
+.quote h2 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.quote p {
+    opacity: 0.8;
+}
+
+
+/* =================================
+   CONTACTO
+================================= */
+
+.contact {
+    background: #eee2cf;
+}
+
+.contact-box {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px;
+
+    border-radius: 28px;
+
+    background: #fbf7ef;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact h2 span {
+    color: #a47748;
+}
+
+.contact-box p {
+    color: #765e50;
+}
+
+.contact-action {
+    min-width: 260px;
+
+    text-align: center;
+}
+
+.number {
+    margin-top: 12px;
+
+    font-size: 0.85rem;
+
+    color: #765e50;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+    background: #3e2a22;
+
+    color: white;
+
+    padding: 60px 7% 25px;
+}
+
+.footer-content {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-logo {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 2.2rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+.footer-subtitle {
+    color: rgba(255,255,255,0.55);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 3px;
+}
+
+.footer-contact {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.footer-contact strong {
+    font-size: 0.9rem;
+}
+
+.footer-contact a {
+    color: rgba(255,255,255,0.65);
+
+    font-size: 0.82rem;
+
+    transition: 0.3s;
+}
+
+.footer-contact a:hover {
+    color: white;
+}
+
+.footer-location {
+    color: rgba(255,255,255,0.65);
+
+    font-size: 0.82rem;
+}
+
+.copyright {
+    max-width: 1150px;
+
+    margin: 25px auto 0;
+
+    text-align: center;
+
+    color: rgba(255,255,255,0.4);
+
+    font-size: 0.7rem;
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .nav {
+        min-height: 70px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .nav > .btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: 650px;
+
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-logo {
+        width: 95px;
+        height: 95px;
+    }
+
+    .section {
+        padding: 75px 20px;
+    }
+
+    .products-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .price-table-container {
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 550px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 22px;
+    }
+
+    .contact-box {
+        padding: 40px 25px;
+    }
+
+    .contact-action {
+        width: 100%;
+    }
+
+    .contact-action .btn {
+        width: 100%;
+    }
+
+    .quote {
+        padding: 90px 20px;
+    }
+}
